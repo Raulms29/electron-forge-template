@@ -11,7 +11,7 @@ This project is just a template. It's almost empty and contains the minimum amou
 ## Project Setup 🛠️
 Clone this repo.
 ```
-git clone https://github.com/Raulms29/TFGTemplate.git
+git clone https://github.com/Raulms29/electron-forge-template.git
 ```
 Then access the created folder and run the following command:
 ```
