@@ -14,7 +14,9 @@
     "clean": "echo Removing files... 🫧 && rm -rf .vite && rm -rf node_modules && rm -rf out && echo All clean now!",
     "setup": "npm run clean && echo Installing dependencies... 🛠️ && npm install",
     "build": "npm run setup && npm run make",
-    "cypress": "npm install && echo Opening Cypress... 💻 && npx cypress open"
+    "cypress": "npm install && echo Opening Cypress... 💻 && npx cypress open",
+    "test": "npx cypress run --component",
+    "test_e2e": "npm install && echo Running e2e tests 💻 && npx cypress run"
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.3.0",
