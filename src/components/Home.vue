@@ -1,5 +1,5 @@
 <template>
-  <h1 id="pepe">💖 Hello World!</h1>
+  <h1 id="home">💖 Hello World!</h1>
   <p>Welcome to your Electron application.</p>
 </template>
 
