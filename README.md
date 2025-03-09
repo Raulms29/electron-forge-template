@@ -20,7 +20,7 @@ npm run build
 This will download the necessary dependencies, compile the project and create the resources needed for the installer in the `out` folder. The installer will be located at `out/make`.
 Once the build is done, to test the project without an installation use:
 ```
-npm start;
+npm start
 ```
 Try the component testing with:
 ```
@@ -28,7 +28,7 @@ npm run test
 ```
 Or try the e2e testing with:
 ```
-npm run cypress;
+npm run cypress
 ```
 Or with:
 ```
