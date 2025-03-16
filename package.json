@@ -12,9 +12,8 @@
     "lint": "eslint --ext .ts,.tsx .",
     "typeorm": "typeorm-ts-node-commonjs",
     "clean": "echo Removing files... 🫧 && rm -rf .vite && rm -rf node_modules && rm -rf out && echo All clean now!",
-    "setup": "npm run clean && echo Installing dependencies... 🛠️ && npm install",
+    "setup": "echo Installing dependencies... 🛠️ && npm install",
     "build": "npm run setup && npm run make",
-    "test": "npx cypress run --component",
     "test:e2e": "npm install && echo Running e2e tests 💻 && npx wdio"
   },
   "devDependencies": {
