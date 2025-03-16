@@ -3,7 +3,7 @@ You will need [Node.js](https://nodejs.org/en) and [npm](https://www.npmjs.com/)
 ## What are we using?
 This project is just a template. It's almost empty and contains the minimum amount of dependencies to work with the following technologies.
 - [Vue.js](https://vuejs.org/)
-- [Cypress](https://www.cypress.io/)
+- [WebdriverIO](https://webdriver.io/)
 - [Electron Forge](https://www.electronforge.io/)
 - [Vite](https://vite.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -22,17 +22,9 @@ Once the build is done, to test the project without an installation use:
 ```
 npm start
 ```
-Try the component testing with:
+Try the e2e testing with:
 ```
-npm run test
-```
-Or try the e2e testing with:
-```
-npm run cypress
-```
-Or with:
-```
-npm run test_e2e
+npm run test:e2e
 ```
 
 Based on another template by [AngusLin10](https://github.com/AngusLin10), which can be found [here](https://github.com/AngusLin10/electron-forge-vite-ts-vue/)
