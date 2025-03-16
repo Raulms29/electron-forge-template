@@ -17,6 +17,9 @@
     ],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "types": ["element-plus/global"]
-  }
+    "types": ["element-plus/global",
+            "@wdio/globals",
+            "@wdio/mocha-framework",
+            "expect-webdriverio",],
+  },
 }

@@ -3,5 +3,5 @@
         <Home />
     </div>
 
-    <img alt="Vue logo" src="../assets/electron.svg" />
+    <img alt="Vue logo" id='test' src="../assets/electron.svg" />
 </template>
