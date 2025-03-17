@@ -20,6 +20,7 @@
     "types": ["element-plus/global",
             "@wdio/globals",
             "@wdio/mocha-framework",
-            "expect-webdriverio",],
+            "expect-webdriverio",
+          "vitest/globals"],
   },
 }
