@@ -9,7 +9,7 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  test:
+  unit-and-component-tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,14 +24,14 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run unit tests
+    - name: Run Unit Tests
       run: npm run test -- --run
 
-    - name: Run component tests
+    - name: Run Component Tests
       run: npm run test:component -- --run
 
   e2e:
-    needs: [test]
+    needs: [unit-and-component-tests]
     runs-on: windows-latest
 
     steps: 
