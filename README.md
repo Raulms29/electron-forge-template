@@ -1,3 +1,4 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Raulms29_electron-forge-template&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Raulms29_electron-forge-template)
 ### Warning 🚧🚧
 You will need [Node.js](https://nodejs.org/en) and [npm](https://www.npmjs.com/) to be able to work with and run this project.
 ## What are we using?
