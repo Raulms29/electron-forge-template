@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     strategy:
       matrix:
@@ -27,11 +27,6 @@ jobs:
 
     - name: Run component tests
       run: npm run test:component -- --run
-
-    - name: Set up Xvfb (virtual display) for E2E tests
-      run: |
-        sudo apt-get install -y xvfb
-        nohup Xvfb :99 -ac & export DISPLAY=:99
 
     - name: Run E2E tests with WebdriverIO
       run: npm run test:e2e -- --run
