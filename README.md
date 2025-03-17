@@ -8,6 +8,7 @@ This project is just a template. It's almost empty and contains the minimum amou
 - [Vite](https://vite.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Node.js](https://nodejs.org/en) with Node Package Manager ([npm](https://www.npmjs.com/))
+- [Vitest](https://vitest.dev/)
 ## Project Setup 🛠️
 Clone this repo.
 ```
@@ -21,6 +22,14 @@ This will download the necessary dependencies, compile the project and create th
 Once the build is done, to test the project without an installation use:
 ```
 npm start
+```
+Try the unit testing with:
+```
+npm run test
+```
+Or the component testing with:
+```
+npm run test:component
 ```
 Try the e2e testing with:
 ```

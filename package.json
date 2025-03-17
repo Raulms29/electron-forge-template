@@ -14,9 +14,9 @@
     "clean": "echo Removing files... 🫧 && rm -rf .vite && rm -rf node_modules && rm -rf out && echo All clean now!",
     "setup": "echo Installing dependencies... 🛠️ && npm install",
     "build": "npm run check-node-folder && npm run make",
-    "test": "npm run check-out-folder && echo Running unit tests... 🧪 && npx vitest test/unit",
+    "test": "npm run check-node-folder && echo Running unit tests... 🧪 && npx vitest test/unit",
     "test:component": "npm run check-node-folder && echo Running component tests... 🧪 && npx vitest test/component",
-    "test:e2e": "npm run check-node-folder && echo Running e2e tests 🧪 && npx wdio",
+    "test:e2e": "npm run check-out-folder && echo Running e2e tests 🧪 && npx wdio",
     "test:all": "echo Running all tests... 🧪 && npm run check-out-folder && echo Running unit tests... 🧪 && npx vitest test/unit --run && echo Running component tests... 🧪 && npx vitest test/component --run && echo Running e2e tests 🧪 && npx wdio",
     "check-out-folder": "node -e \"const fs = require('fs'); const path = './out'; if (fs.existsSync(path)) { console.log('Electron app detected!'); } else { console.log('Electron app not detected, proceeding with build'); require('child_process').execSync('npm run build', { stdio: 'inherit' }); }\"",
     "check-node-folder": "node -e \"const fs = require('fs'); const path = './node_modules'; if (fs.existsSync(path)) { console.log('All dependencies installed!'); } else { console.log('No dependencies found'); require('child_process').execSync('npm run setup', { stdio: 'inherit' }); }\""
