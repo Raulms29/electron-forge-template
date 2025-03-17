@@ -56,6 +56,13 @@ export const config: WebdriverIO.Config = {
         browserName: 'electron',
         // Electron service options
         // see https://webdriver.io/docs/desktop-testing/electron/configuration/#service-options
+        'goog:chromeOptions': {
+            args: [
+                '--headless',              // Run in headless mode
+                '--disable-gpu',           // Disable GPU acceleration (useful for headless)
+                '--no-sandbox',            // Needed for CI environments like GitHub Actions
+            ]
+        },
         'wdio:electronServiceOptions': {
             // custom application args
             appArgs: []
